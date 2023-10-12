@@ -20,4 +20,4 @@ This repository hosts an implementation of the get_next_line function in C. The 
 
 •Improved Code Structure: Enhance code readability and maintainability by encapsulating file reading logic within a modular function, promoting organized and comprehensible code.
 
-Feel free to explore the repository, experiment with the code, and seamlessly incorporate this efficient line-reading function into your projects. If you encounter any issues or have suggestions for enhancements, your contributions are highly appreciated!
+Feel free to explore the repository, experiment with the code, and seamlessly incorporate this line-reading function into your projects. If you encounter any issues or have suggestions for enhancements, your contributions are highly appreciated!
