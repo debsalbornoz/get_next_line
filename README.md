@@ -1,6 +1,6 @@
 <h1 align="center"> Get next line </h1>
-img src="file:///nfs/homes/dlamark-/Downloads/097106a8-9b3c-49f9-8f5b-c1efed5268b5%20(1).png" align="left" alt="Descrição da Imagem">
-!
+![097106a8-9b3c-49f9-8f5b-c1efed5268b5 (1)](https://github.com/debsalbornoz/get_next_line/assets/119970138/60b2efc1-35d2-43f4-bfa1-f2f8f1535862)
+
 
 This repository hosts an implementation of the get_next_line function in C. The get_next_line function is a vital tool in file input/output operations, enabling the program to read one line at a time from a file or an input source until it reaches the end of the file. This function dynamically allocates memory for each line, ensuring efficient memory usage.
 
