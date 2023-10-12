@@ -1,6 +1,7 @@
 <h1 align="center"> Get next line </h1>
 
 ![get_next_linee](https://github.com/debsalbornoz/get_next_line/assets/119970138/ad029c4d-5e6b-4afb-b3a3-a97f4fe6bc97)
+
 <img alt="Static Badge" src="https://img.shields.io/badge/Status-Finished-green">
 
 <h2>About</h2>
