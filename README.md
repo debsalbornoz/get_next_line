@@ -8,7 +8,7 @@
 This repository hosts an implementation of the get_next_line function in C. The get_next_line function is a vital tool in file input/output operations, enabling the program to read one line at a time from a file or an input source until it reaches the end of the file. This function dynamically allocates memory for each line, ensuring efficient memory usage.
 
 
-Key Features:
+<h3> Key Features: </h3>
 
 •Efficient Line-by-Line Reading: Reads one line at a time from files or input streams, optimizing data processing by handling information incrementally.
 
