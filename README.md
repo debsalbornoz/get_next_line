@@ -10,7 +10,7 @@
 </div>
   
 <h2>About</h2>
-<p align= "left">This repository hosts an implementation of the get_next_line function in C. The get_next_line function is a vital tool in file input/output operations, enabling the program to read one line at a time from a file or an input source until it reaches the end of the file. This function dynamically allocates memory for each line, ensuring efficient memory usage.</p>
+This repository contains an implementation of the get_next_line function in C, created as a project for the 42 programming school. The get_next_line function is a vital tool in file input/output operations, enabling the program to read one line at a time from a file or an input source until it reaches the end of the file. This function dynamically allocates memory for each line, ensuring efficient memory usage.
 
 
 <h4> Key Features: </h4>
