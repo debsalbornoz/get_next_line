@@ -27,8 +27,13 @@ This repository contains an implementation of the get_next_line function in C, c
 
 Feel free to explore the repository, experiment with the code, and seamlessly incorporate this line-reading function into your projects. If you encounter any issues or have suggestions for enhancements, your contributions are highly appreciated!
 
-<h2>How to use</h2>
+<h2>Usage</h2>
 
+<h3>Requirements:</h3>
+
+This project needs cc compiler.
+
+<h3>Instructions: </h3>
 
 •Clone the repository
 
