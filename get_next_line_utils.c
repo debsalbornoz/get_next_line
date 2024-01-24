@@ -12,6 +12,10 @@
 
 #include "get_next_line.h"
 
+
+/* Concatenates two strings into a new string. It calculates the length of the resulting string, allocates memory for it,
+and then copies the characters from s1 and s2 into s3. The function returns a pointer to the newly created string s3*/
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		s3_len;
@@ -40,6 +44,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (s3);
 }
 
+/*Searches for the first occurrence of a specified character in a given string.
+If the character is found, it returns a pointer to the located character within the string.*/
+
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0' && *s != (char)c)
@@ -51,6 +58,8 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return (NULL);
 }
+
+//Sets the first n bytes of the memory block pointed to by s to zero
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -65,6 +74,8 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+//Allocates a block of memory for an array, initializing all its bytes to zero.
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
@@ -81,6 +92,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(str, total);
 	return (str);
 }
+
+//Calculates and returns the length of a given string 
 
 size_t	ft_strlen(const char *s)
 {
