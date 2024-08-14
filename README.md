@@ -1,54 +1,50 @@
-<h1 align="center"> Get next line </h1>
-
-
+<h1 align="center">Get Next Line</h1>
 
 <div align="center">
- <img src="https://github.com/debsalbornoz/get_next_line/assets/119970138/ad029c4d-5e6b-4afb-b3a3-a97f4fe6bc97">
-</div> 
-<div align="center">
-<img alt="Static Badge" src="https://img.shields.io/badge/Status-Finished-green">
+  <img src="https://github.com/debsalbornoz/get_next_line/assets/119970138/ad029c4d-5e6b-4afb-b3a3-a97f4fe6bc97">
 </div>
-  
-<h2>About</h2>
-This repository contains an implementation of the get_next_line function in C, created as a project for the 42 programming school. The get_next_line function is a vital tool in file input/output operations, enabling the program to read one line at a time from a file or an input source until it reaches the end of the file. This function dynamically allocates memory for each line, ensuring efficient memory usage.
+<div align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Status-Finished-green">
+</div>
 
+<h2>Sobre</h2>
+Este repositório contém uma implementação da função get_next_line em C, criada como um projeto para a escola de programação 42. A função get_next_line é uma ferramenta essencial em operações de entrada/saída de arquivos, permitindo que o programa leia uma linha de cada vez de um arquivo ou fonte de entrada até chegar ao final do arquivo. Esta função aloca dinamicamente a memória para cada linha, garantindo uso eficiente da memória.
 
-<h4> Key Features: </h4>
+<h4>Principais Recursos:</h4>
 
-•Efficient Line-by-Line Reading: Reads one line at a time from files or input streams, optimizing data processing by handling information incrementally.
+• **Leitura Eficiente Linha a Linha:** Lê uma linha de cada vez de arquivos ou fluxos de entrada, otimizando o processamento de dados ao lidar com informações de forma incremental.
 
-•Dynamic Memory Allocation: Dynamically allocates memory for each line, promoting efficient memory usage, even when dealing with extensive text files.
+• **Alocação Dinâmica de Memória:** Aloca dinamicamente a memória para cada linha, promovendo um uso eficiente da memória, mesmo ao lidar com arquivos de texto extensos.
 
-•Memory Resource Management: Process large text files line by line without straining the system's memory, ensuring smooth operation.
+• **Gerenciamento de Recursos de Memória:** Processa grandes arquivos de texto linha por linha sem sobrecarregar a memória do sistema, garantindo uma operação suave.
 
-•Easy Integration: Seamlessly integrate into a variety of C projects involving file operations, providing a reliable solution for reading files.
+• **Fácil Integração:** Integra-se perfeitamente a uma variedade de projetos em C envolvendo operações com arquivos, fornecendo uma solução confiável para leitura de arquivos.
 
-•Improved Code Structure: Enhance code readability and maintainability by encapsulating file reading logic within a modular function, promoting organized and comprehensible code.
+Sinta-se à vontade para explorar o repositório, experimentar o código e integrar esta função de leitura de linhas em seus projetos. Se você encontrar problemas ou tiver sugestões de melhorias, suas contribuições são altamente apreciadas! <3
 
-Feel free to explore the repository, experiment with the code, and seamlessly incorporate this line-reading function into your projects. If you encounter any issues or have suggestions for enhancements, your contributions are highly appreciated!
+<h2>Como usar:</h2>
 
-<h2>Usage</h2>
+<h3>Requisitos:</h3>
 
-<h3>Requirements:</h3>
+Este projeto necessita do compilador `cc`.
 
-This project needs cc compiler.
+<h3>Instruções:</h3>
 
-<h3>Instructions: </h3>
+• Clone o repositório
 
-•Clone the repository
-
-
-```
+```bash
 git clone https://github.com/debsalbornoz/get_next_line.git
 ```
 
-•Include the files of the repository in your project folder and in your source code include the header 
+• Inclua os arquivos do repositório na sua pasta de projetos e inclua o header no seu código fonte 
 
 ```
+
 #include "get_next_line.h>
+
 ```
 
-•Call the get_next_line function to read lines from the file. Here is an simple example of how to use:
+•Chame a função "get_next_line" para ler linhas do arquivo. Aqui está um exemplo simples de como usar: 
 
 ```
 #include "get_next_line.h"
@@ -59,23 +55,23 @@ int main(void)
 {
     int fd;
     char   *line;
-    fd = open("file.txt", O_RDONLY); //opens the file for reading only
-    
-    line = get_next_line(fd); //calls once get_next_line and reads the first line of the file
-    printf("%s",line); //prints the line
-    free(line); //frees allocated memory
-    close(fd); //close the file
-  return(0); //Ends the program
+
+    //Abre o arquivo para leitura, é preciso que o arquivo file.txt exista e verifica erros na abertura
+    fd = open("file.txt", O_RDONLY);
+    if (fd == -1)
+       return (-1);
+    //Chama a função uma vez, lê a primeira linha do arquivo e imprime a linha no terminal
+    line = get_next_line(fd);
+    printf("%s",line);
+   //Libera a memória alocada pela linha e fecha o arquivo
+    free(line); 
+    close(fd);
+  return(0);
 }
 ```
 
-•Compile and execute
+•Compile e execute : 
 
 
-```
-cc  -Wall -Wextra -Werror -o my_program my_program.c get_next_line.c get_next_line_utils.c && ./my_program 
-```
-
-
-
+cc  -Wall -Wextra -Werror -o my_program my_program.c get_next_line.c get_next_line_utils.c  &&  ./my_program
 
